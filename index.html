@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Green's Tree Care</title>
+    <link rel="stylesheet" href="resest.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <!--Nav Bar-->
+    <nav>
+
+      <ul class="menu">
+        <li><a class="menuItem" href="#">Home</a></li>
+        <li><a class="menuItem" href="#">Services</a></li>
+        <li><a class="menuItem" href="#">Contact</a></li>
+      </ul>
+      <button class="hamburger">
+        <i class="menuIcon material-icons">menu</i>
+        <i class="closeIcon material-icons">close</i>
+      </button>
+    </nav>
+    <main>
+      <!--banner-->
+      <div class="banner">
+        <img src="./images/banner1.png">
+        <img src="./images/banner2.png">
+        <img src="./images/banner3.png">
+      </div>
+      <!--services-->
+      <div class="services">
+        <div class="service-card">
+          <h2>Tree and Brush Removal</h2>
+          
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          <img src="./images/tree_fell.jpg">
+        </div>
+        <div class="service-card">
+          <h2>Pruning</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <img src="./images/pruning.jpg">
+        </div>
+        <div class="service-card">
+          <h2>Fence Repair, DIY, and More</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <img src="./images/repair2.jpg">
+        </div>
+      </div>
+      <!--contact-->
+      <div class="contact">
+        <div class="container">
+          <h3>Green's Tree Care</h3>
+          <h4>Phone: <a href="tel:12095919555">12095919555</a></h4>
+          <h4>Email: <a href="mailto:yawhateva@protonmail.com">yawhateva@protonmail.com</a></h4>
+        </div>
+        <div class="container">
+          <form onsubmit="sendEmail(); reset(); return false;">
+            <h3>Get in Touch</h3>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <input type="text" id="phone" placeholder="Phone Number" required>
+            <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <!--footer-->
+    <footer>
+      <h5>Copywrite Green's Tree Care 2023</h5>
+    </footer>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

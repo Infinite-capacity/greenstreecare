@@ -1,0 +1,242 @@
+
+/*General*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  background-image: url("./images/forest.jpg");
+  background-size: cover;
+}
+
+main {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.mobile {
+  display: none;
+}
+
+/*Nav*/
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  z-index: 96;
+  background-color: hsla(180, 58%, 4%, 80%);
+  height: 4rem;
+  top: 0;
+
+}
+
+i.closeIcon {
+  display: none;
+}
+
+button.hamburger {
+  opacity: 100%;
+}
+
+
+.hamburger {
+  z-index: 100;
+  padding: 4px;
+  border: black solid 1px;
+  background: white;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.1s;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background-color: hsla(180, 58%, 4%, 90%);
+  color: #FCFFFC;
+  list-style: none;
+  padding-top: 4rem;
+  padding-left: 0;
+  padding-bottom: 4rem;
+
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+.menuItem {
+  display: block;
+  padding: 2rem 1rem;
+  font-size: 1.8rem;
+  color: #FCFFFC;
+  text-decoration: none;
+  opacity: 100%;
+}
+
+
+.menuItem:hover {
+  background: #2BA84A;
+}
+
+
+/*Banner*/
+.banner {
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  background-image: url("./images/chainsaw2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.banner img {
+  flex-shrink: 3;
+}
+
+/*Services*/
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background:   hsla(180, 58%, 4%,70%);
+  padding: 8vh 0;
+  border-radius: 15px;
+}
+
+.service-card {
+  margin: 2vh 2vh;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #FCFFFC;
+  border-radius: 15px;
+  overflow: hidden;
+  }
+
+.services h2{
+  padding: 0.5rem;
+  width: 100%;
+  background: #2BA84A;
+  color: #040F0F;
+  align-self: flex-start;
+ }
+
+.services p {
+  padding: 2rem;
+  align-self: center;
+  flex: 1;
+}
+
+
+.service-card img {
+  flex: 2 1 0;
+  max-width: 100%;
+}
+
+
+/*Contact*/
+div.contact{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  padding: 1rem 0;
+  background:   hsla(180, 13%, 20%, 90%);
+  border-radius: 15px;
+}
+div.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: #FCFFFC;
+  min-height: 20vh;
+  min-width: 40vh;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  background: #248232;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.container a {
+  color: #248232;
+}
+
+.container a:visited {
+  color: #2D3A3A;
+}
+
+.container a:active {
+  color: #2D3A3A;
+}
+
+.container a:hover {
+  color: #2BA84A;
+}
+
+.container form input, textarea {
+  margin: .5rem 0;
+}
+
+
+
+.container button {
+  width: 10rem;
+  padding: .5rem;
+  border-radius: 10px;
+  background: #248232;
+  border: none;
+  margin-top: 1rem;
+  align-self: center;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.container button:hover {
+  background-color: #2BA84A;
+}
+
+/*Footer*/
+footer {
+  height: 50px;
+  background-color: black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
+
+footer h5 {
+  margin-left: 20px;
+  color: white;
+}
