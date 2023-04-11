@@ -281,9 +281,13 @@ footer h5 {
 }
 
 @media only screen and (max-width: 600px) {
-  .banner {
+  div.banner {
     height: 25vh;
     margin-top: 20vh;
+  }
+
+  div.banner img{
+    flex-shrink:0;
   }
 
 
