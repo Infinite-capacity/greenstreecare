@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 15px;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -24,7 +28,25 @@ main {
   display: none;
 }
 
+input ,textarea {
+  font-size: 1.1rem;
+}
 
+p {
+  font-size: 1.1rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
 
 /*Nav*/
 nav {
@@ -55,12 +77,12 @@ button.hamburger {
   background: white;
   cursor: pointer;
   margin-right: 1rem;
-  height: 70%;
+  height: 70px;
   width: 70px;
 }
 
 .hamburger i {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 .menu {
@@ -70,6 +92,7 @@ button.hamburger {
   top: 0;
   left: 0;
   right: 0;
+  bottom: 0;
   z-index: 99;
   background-color: hsla(180, 58%, 4%, 90%);
   color: #FCFFFC;
@@ -140,7 +163,7 @@ button.hamburger {
   }
 
 .services h2{
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   width: 100%;
   background: #2BA84A;
   color: #040F0F;
@@ -151,6 +174,7 @@ button.hamburger {
   padding: 2rem;
   align-self: center;
   flex: 1;
+  line-height: 2rem;
 }
 
 
@@ -165,7 +189,7 @@ div.contact{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-content: center;
+  align-items: center;
   padding: 1rem 0;
   background:   hsla(180, 13%, 20%, 90%);
   border-radius: 15px;
@@ -193,6 +217,10 @@ div.container {
   border-radius: 10px;
 }
 
+.container h4 {
+  margin: 1rem;
+}
+
 .container a {
   color: #248232;
 }
@@ -211,6 +239,7 @@ div.container {
 
 .container form input, textarea {
   margin: .5rem 0;
+  color: #040F0F;
 }
 
 
@@ -257,8 +286,5 @@ footer h5 {
     margin-top: 20vh;
   }
 
-  .menu {
-    bottom: 0;
-  }
 
 }
