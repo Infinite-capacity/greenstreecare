@@ -286,4 +286,8 @@ footer h5 {
     padding-top: 10vh;
   }
 
+  div.banner img {
+    padding: 2vh;
+  }
+
 }
